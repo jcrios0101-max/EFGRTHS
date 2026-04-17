@@ -1,0 +1,464 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMVljJHs1YzDyng92M1MeD+",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/jcrios0101-max/EFGRTHS/blob/main/Prova_PA.\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dW0G3Xua90Kw",
+        "outputId": "a183125e-ee42-40a6-c7e5-23fe7b46f1ed"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite um numero: 8\n",
+            "o numero 8 é par \n"
+          ]
+        }
+      ],
+      "source": [
+        "#Questão 1\n",
+        "\n",
+        "#Escrever um programa que diz se o numero é par ou impar\n",
+        "\n",
+        "#Entrada\n",
+        "\n",
+        "numero = int(input(\"digite um numero: \"))\n",
+        "\n",
+        "#Processamento\n",
+        "\n",
+        "if numero % 2 == 0:\n",
+        "\n",
+        " print(f\"o numero {numero} é par \")\n",
+        "\n",
+        "else:\n",
+        "\n",
+        "  print(f\"o numero {numero} é ímpar\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Questão 2\n",
+        "\n",
+        "#Solicite dois números e mostre qual é o maior (ou se são iguais)\n",
+        "\n",
+        "#Entrada\n",
+        "\n",
+        "numero = float(input(\"digite um número: \"))\n",
+        "numero2 = float(input(\"digite outro número: \"))\n",
+        "\n",
+        "#Processamento/Saída\n",
+        "\n",
+        "result = (numero - numero2)\n",
+        "\n",
+        "if result > 0 :\n",
+        "  print(f\"o número {numero} é maior\")\n",
+        "\n",
+        "elif result == 0 :\n",
+        "  print(f\"os dois números são iguais\")\n",
+        "\n",
+        "else:\n",
+        "  print(f\"o número {numero2} é maior\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KdUBZNJY-Mv9",
+        "outputId": "e39be70c-0c20-429c-a2be-9e911d7cb03e"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite um número: 9\n",
+            "digite outro número: 6\n",
+            "o número 9.0 é maior\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Questão 3\n",
+        "\n",
+        "##Escrever um programa que verifica as notas dos 4 bimestres e calcula a media do aluno\n",
+        "\n",
+        "#nao permitir que o usuario digite notas menores que 0 e maiores que 10\n",
+        "#media menor que 5 - reprovado\n",
+        "#media maior ou igual a 5 e menor que 7 - recuperação\n",
+        "#media maior ou igual 7 - aprovado\n",
+        "\n",
+        "#entrada\n",
+        "\n",
+        "nota1 = float (input(\"digite a nota do bimestre 1: \"))\n",
+        "nota2 = float (input(\"digite a nota do bimestre 2: \"))\n",
+        "nota3 = float (input(\"digite a nota do bimestre 3: \"))\n",
+        "nota4 = float (input(\"digite a nota do bimestre 4: \"))\n",
+        "\n",
+        "#Procesamento/saída1\n",
+        "\n",
+        "media = ((nota1+nota2+nota3+nota4)/4)\n",
+        "\n",
+        "if media < 5 :\n",
+        "\n",
+        "  print (f\"media: {media} aluno reprovado\")\n",
+        "\n",
+        "elif media >= 5 and media < 7 :\n",
+        "\n",
+        "  print (f\"media: {media} aluno de recuperação\")\n",
+        "\n",
+        "else:\n",
+        "\n",
+        "  print (f\"media: {media} aluno aprovado\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "G9qYvlpbBMHA",
+        "outputId": "42e81412-17d2-44b1-badc-38301d83d486"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite a nota do bimestre 1: 8\n",
+            "digite a nota do bimestre 2: 5\n",
+            "digite a nota do bimestre 3: 9\n",
+            "digite a nota do bimestre 4: 10\n",
+            "media: 8.0 aluno aprovado\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Questão 4\n",
+        "\n",
+        "# Escrever um programa que diga se é Criança, Adolescente ou Adulto\n",
+        "\n",
+        "#Entrada\n",
+        "\n",
+        "nome = str (input(\"Digite o seu nome: \"))\n",
+        "idade = int (input( \"Digite uma idade: \"))\n",
+        "\n",
+        "#Processamento / Saída\n",
+        "\n",
+        "if idade < 12 :\n",
+        " print (f\"{nome}, você é uma criança\")\n",
+        "\n",
+        "elif idade < 18 :\n",
+        "  print (f\"{nome}, você é um adolescente\")\n",
+        "\n",
+        "elif idade < 60 :\n",
+        "  print (f\"{nome}, você é um adulto\")\n",
+        "\n",
+        "else:\n",
+        "  print (f\"{nome}, você é um idoso\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4Wh9p82DEIgz",
+        "outputId": "33d069e9-d39b-4b3e-bf29-78f48dd7c6f5"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o seu nome: Rios\n",
+            "Digite uma idade: 15\n",
+            "Rios, você é um adolescente\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Questão 5\n",
+        "\n",
+        "#Defina uma senha fixa no código\n",
+        "#Peça ao usuário para digitar e informe se está correta ou incorreta\n",
+        "\n",
+        "#Entrada\n",
+        "\n",
+        "senhafix = float(input(\"escolha uma senha: \"))\n",
+        "senha = float(input(\"digite a senha: \"))\n",
+        "\n",
+        "#Processamento/Saída\n",
+        "\n",
+        "if senha == senhafix:\n",
+        "  print(\"senha correta\")\n",
+        "\n",
+        "else:\n",
+        "  print(\"senha incorreta\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YqoCMFymET_U",
+        "outputId": "588fdd06-7097-402a-88fd-2932153fdfc3"
+      },
+      "execution_count": 40,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "escolha uma senha: 0101\n",
+            "digite a senha: 0101\n",
+            "senha correta\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Questão 6\n",
+        "\n",
+        "#Peça um número e diga se ele é positivo, negativo ou zero.\n",
+        "\n",
+        "#Entrada\n",
+        "\n",
+        "numero = float(input(\"digite um numero: \"))\n",
+        "\n",
+        "#Processamento/Saída\n",
+        "\n",
+        "if numero == 0:\n",
+        "  print(f\"o número é zero\")\n",
+        "\n",
+        "elif numero > 0:\n",
+        "  print(f\"o número {numero} é positivo\")\n",
+        "\n",
+        "else:\n",
+        "  print(f\"o número {numero} é negativo\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WR5CI7gGK6hD",
+        "outputId": "f49dcb30-20ee-4993-d55f-b8f47747a8e3"
+      },
+      "execution_count": 44,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite um numero: 8\n",
+            "o número 8.0 é positivo\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Questão 7\n",
+        "\n",
+        "#Escrever um programa de uma calculadora simples, o usuário ira digitar 02 numeros e escolhera uma operação aritmetica\n",
+        "\n",
+        "#Entrada\n",
+        "\n",
+        "print (\"--------------Calculadora--------------|\")\n",
+        "print(\"                                       |\")\n",
+        "print(\"-----------------Menu------------------|\")\n",
+        "print(\"                                       |\")\n",
+        "print(\"Opção = 1 - Soma                       |\")\n",
+        "print(\"Opção = 2 - Subtração                  |\")\n",
+        "print(\"Opção = 3 - Multiplicação              |\")\n",
+        "print(\"Opção = 4 - Divisão                    |\")\n",
+        "print(\"_______________________________________|\")\n",
+        "\n",
+        "# Entrada\n",
+        "numero = float (input (\"Digite um numero: \"))\n",
+        "opcao = int (input (\"Escolha a opção desejada: \"))\n",
+        "numero1 = float( input(\"Digite um Numero: \"))\n",
+        "\n",
+        "#Processamento / Saída\n",
+        "\n",
+        "if opcao == 1:\n",
+        " print (f\"A soma de {numero} e {numero1} é igual a {numero + numero1} :\")\n",
+        "\n",
+        "elif opcao == 2:\n",
+        "  print (f\"A subtração de {numero} e {numero1} é igual a {numero - numero1} :\")\n",
+        "\n",
+        "elif opcao == 3:\n",
+        "  print (f\"A multiplicação de {numero} e {numero1} é igual a {numero * numero1}\")\n",
+        "\n",
+        "elif opcao == 4:\n",
+        "  print (f\"A divisão de {numero} e {numero1} é igual a {numero / numero1}\")\n",
+        "\n",
+        "else:\n",
+        "  print (\"opção invalida\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aUpezeUuNRJU",
+        "outputId": "7d125ae3-5672-4f3b-be36-ce12dffa63e5"
+      },
+      "execution_count": 46,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "--------------Calculadora--------------|\n",
+            "                                       |\n",
+            "-----------------Menu------------------|\n",
+            "                                       |\n",
+            "Opção = 1 - Soma                       |\n",
+            "Opção = 2 - Subtração                  |\n",
+            "Opção = 3 - Multiplicação              |\n",
+            "Opção = 4 - Divisão                    |\n",
+            "_______________________________________|\n",
+            "Digite um numero: 67\n",
+            "Escolha a opção desejada: 2\n",
+            "Digite um Numero: 67\n",
+            "A subtração de 67.0 e 67.0 é igual a 0.0 :\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "#Questão 8\n",
+        "\n",
+        "#Peça um número de 1 a 7 e mostre o dia correspondente\n",
+        "\n",
+        "#Entrada\n",
+        "\n",
+        "d1 = domingo\n",
+        "d2 = segunda-feira\n",
+        "d3 = terça-feira\n",
+        "d4 = quarta-feira\n",
+        "d5 = quinta-feira\n",
+        "d6 = sexta-feira\n",
+        "d7 = sábado\n",
+        "\n",
+        "dia = int(input(f\"digite o dia: \"))\n",
+        "\n",
+        "#Processamento/Saída\n",
+        "\n",
+        "if dia == 1:\n",
+        "  print(f\"{d1}\")\n",
+        "\n",
+        "elif dia == 2:\n",
+        "  print(f\"{d2}\")\n",
+        "\n",
+        "elif dia == 3:\n",
+        "  print(f\"{d3}\")\n",
+        "\n",
+        "elif dia == 4:\n",
+        "  print(f\"{d4}\")\n",
+        "\n",
+        "elif dia == 5:\n",
+        "  print(f\"{d5}\")\n",
+        "\n",
+        "elif dia == 6:\n",
+        "  print(f\"{d6}\")\n",
+        "\n",
+        "else:\n",
+        "  print(f\"{d7}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 211
+        },
+        "id": "Rbsl3O1fN-Cw",
+        "outputId": "bf574cb3-97c0-4656-f6bb-6da8a77f9913"
+      },
+      "execution_count": 49,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "name 'domingo' is not defined",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipykernel_803/1185299065.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0;31m#Entrada\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      6\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 7\u001b[0;31m \u001b[0md1\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mdomingo\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      8\u001b[0m \u001b[0md2\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0msegunda\u001b[0m\u001b[0;34m-\u001b[0m\u001b[0mfeira\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      9\u001b[0m \u001b[0md3\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mterça\u001b[0m\u001b[0;34m-\u001b[0m\u001b[0mfeira\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'domingo' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "0LbwYC0QQ9On"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "2DHp7WVgQ9te"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "LIMD1zOeJyms"
+      }
+    }
+  ]
+}
